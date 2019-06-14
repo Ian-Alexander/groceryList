@@ -4,7 +4,10 @@ $(document).ready(function() {
 
     blanks.forEach(function(blank){
       var userInput = $("input#" + blank).val();
-      $("." + blank).text(userInput);
+      var order = userInput.toUpperCase();
+
+      $("." + blank).text(order);
+
     });
 
     $("#list").show();
